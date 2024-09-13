@@ -12,7 +12,7 @@ WITH paid_data as
         UNION ALL
         SELECT 'Google Ads' as channel, date, date_granularity,
             spend, clicks, impressions, 0 as add_to_cart, purchases, revenue
-        FROM {{ source('reporting','googleads_campaign_performance') }}
+        FROM {{ source('reporting','googleads_campaign_performance') }})
     GROUP BY channel, date, date_granularity)
     
 SELECT channel,
