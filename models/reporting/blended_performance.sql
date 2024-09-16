@@ -24,4 +24,4 @@ SELECT channel,
     add_to_cart
     purchases,
     revenue
-FROM spend_data
+FROM paid_data
